@@ -3,9 +3,13 @@
 // Expected Output : 'abeemrstw'
 // Assume punctuation and numbers symbols are not included in the passed string.
 
-const randomString = 'fadhfnaigjwbfnvlas';
 
 function alphabetOrder(phrase) {
-    return phrase.split('').sort().join('');
+    return phrase
+        .split('')
+        .sort()
+        .join('');
 }
-console.log(`Phrase ${randomString} sorted by alphabet is ${alphabetOrder(randomString)}`);
+
+const randomString = 'fadhfnaigjwb fnvlas';
+console.log(`Phrase "${randomString}" sorted by alphabet is: "${alphabetOrder(randomString)}"`);

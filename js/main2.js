@@ -4,14 +4,18 @@
 
 function palindrome(phrase) {
 
-    let phraseReversed = phrase.replace(/ /g, '').split('').reverse().join('');
+    let phraseReversed = phrase
+        .replace(/ /g, '')
+        .split('')
+        .reverse()
+        .join('');
 
     if (phrase.replace(/ /g, '') === phraseReversed) {
-        return console.log(`Phrase ${phrase} is polindrome`);
+        return `Phrase "${phrase}" is a polindrome`;
     } else {
-        return console.log(`Phrase ${phrase} is NOT polindrome`);
+        return `Phrase "${phrase}" is NOT a polindrome`;
     }
 }
 
-const phrase = 'nurses run';
-console.log(palindrome(phrase));
+const phrase1 = 'nurses run';
+console.log(palindrome(phrase1));

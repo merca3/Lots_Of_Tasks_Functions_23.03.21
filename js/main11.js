@@ -4,10 +4,8 @@
 // the sum of its positive divisors excluding the number itself 
 // (also known as its aliquot sum).
 
-const num = 28;
 
 function isPerfectNum(number) {
-
     let divisorSum = 0;
     let result = false;
     for (let i = 1; i < number; i++) {
@@ -15,11 +13,11 @@ function isPerfectNum(number) {
             divisorSum += i;
         }
     }
-
     if (divisorSum == number) {
         result = true;
     }
     return result;
-
 }
+
+const num = 29;
 console.log(`Is number ${num} perfect? "${isPerfectNum(num)}"`);

@@ -5,7 +5,6 @@
 // Example string : 'The quick brown fox'
 // Expected Output : 5
 
-const phrase = 'The quick brown fox';
 
 function countVowels(phrase) {
     let vowels = /[aeiou]/gi;
@@ -14,6 +13,7 @@ function countVowels(phrase) {
     return count;
 }
 
+const phrase = 'The quick brown fox';
 console.log(`In phrase "${phrase}" are ${countVowels(phrase)} vowels`);
 
 

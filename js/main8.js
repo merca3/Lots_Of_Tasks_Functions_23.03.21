@@ -2,7 +2,6 @@
 // Note : A prime number (or a prime) is a natural number greater than 1 that has 
 // no positive divisors other than 1 and itself.
 
-const number = 47;
 
 function isPrimeNumber(number) {
     let hadDivisor = false;
@@ -13,6 +12,7 @@ function isPrimeNumber(number) {
         }
     }
     return !hadDivisor;
-
 }
-console.log(`Number ${number} is prime? ${isPrimeNumber(number)}`);
+
+const number = 47;
+console.log(`Is number ${number} prime? ${isPrimeNumber(number)}`);

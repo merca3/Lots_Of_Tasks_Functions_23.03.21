@@ -3,7 +3,6 @@
 // Example string : 'the quick brown fox'
 // Expected Output : 'The Quick Brown Fox '
 
-const phrase = 'the quick brown fox';
 
 function firstLetterBig(phrase) {
 
@@ -16,4 +15,5 @@ function firstLetterBig(phrase) {
     return phraseSplit.join(' ');
 }
 
-console.log(`Was "${phrase}", now "${firstLetterBig(phrase)}"`);
+const phrase1 = 'the quick brown fox';
+console.log(`Was "${phrase1}", now "${firstLetterBig(phrase1)}"`);

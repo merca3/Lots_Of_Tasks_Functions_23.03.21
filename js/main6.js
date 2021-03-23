@@ -2,12 +2,16 @@
 // Example string : 'Web Development Tutorial'
 // Expected Output : 'Development'
 
-const phrase = 'Web Development Tutorial';
 
 function longestWord(phrase) {
-    let sortedArray = phrase.split(' ').sort((a, b) => a.length - b.length);
+    let sortedArray = phrase
+        .split(' ')
+        .sort((a, b) => a.length - b.length);
+
     let longWord = sortedArray[sortedArray.length - 1];
     return longWord;
 }
 
-console.log(`The longest word is "${longestWord(phrase)}"`);
+const phrase1 = 'Web Development Tutorial';
+console.log(`Phrase is: ${phrase1}`);
+console.log(`The longest word is: ${longestWord(phrase1)}`);

@@ -2,13 +2,15 @@
 // Note : There are six possible values that typeof returns: object, boolean, 
 // function, number, string, and undefined.
 
-const inputString = 'string abc';
-const inputNumber = 123;
-const inputBoolean = true;
+
 
 function checkType(input) {
     return typeof(input);
 }
+
+const inputString = 'string abc';
+const inputNumber = 123;
+const inputBoolean = true;
 
 console.log(checkType(inputString));
 console.log(checkType(inputNumber));
